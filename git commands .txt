@@ -1,0 +1,51 @@
+git commands :
+
+pwd: prsent workig direvtory
+ls: list files
+cd:chnage directory
+mkdir:make directory
+touch:make a file
+git init
+git status
+git commit -m "//any meesage"
+git log
+git revert
+git reset
+git branch 
+git checkout -- used to switch btween master branch and other branch
+git merge
+git checkout -b "branch name" - to create and switch to that branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

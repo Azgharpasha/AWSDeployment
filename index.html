@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Website</title>
+</head>
+ <body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="loadPage('home.html')">Home</a></li>
+            <li><a href="#" onclick="loadPage('contact.html')">Contact</a></li>
+            <li><a href="#" onclick="loadPage('about.html')">About</a></li>
+        </ul>
+    </nav>
+   <section>
+        <p>
+            Thank you for visiting our website. We strive to provide valuable information and services. Explore
+            and enjoy your time here!
+        </p>
+        <img src="./images/movie1.jpg" alt="Welcome Image">
+       <section id="content">
+            <!-- Content will be loaded here -->
+        </section>
+    </section>
+    <footer>
+        <h1>@Copy Right #24024 </h1>
+    </footer>
+    <script>
+        function loadPage(page) {
+            fetch(page)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading page:', error));
+        }
+    </script>
+</body>
+ </html>
